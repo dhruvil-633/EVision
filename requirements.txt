@@ -1,0 +1,9 @@
+# EVision - Intelligent EV Energy Management
+# Tested with Python 3.12 on Windows 11; versions below are the ones used.
+numpy>=1.26
+pandas>=2.0
+streamlit>=1.32
+plotly>=5.18
+tabulate>=0.9          # markdown tables in the generated report
+scikit-fuzzy>=0.5      # optional: only used to cross-validate the fuzzy engine
+pytest>=8.0            # test suite

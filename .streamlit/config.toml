@@ -1,0 +1,12 @@
+# EVision design system: a light management dashboard with a dark navy sidebar.
+# Pinned so the app looks the same regardless of the operating system theme.
+[theme]
+base = "light"
+primaryColor = "#14B8A6"
+backgroundColor = "#F5F7FA"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#0F172A"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false
