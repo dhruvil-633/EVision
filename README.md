@@ -333,3 +333,30 @@ required.
    convergence, sensitivity to the objective weights.
 7. Limitations and threats to validity.
 8. Conclusion and future scope.
+
+## 16. Deployment
+
+The dashboard is a standard Streamlit app and runs on any host that can serve a
+Python web process.
+
+**Render** (blueprint included): `render.yaml` defines a free web service with
+
+```
+build:  pip install -r requirements.txt
+start:  streamlit run app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true
+```
+
+Point Render at this repository (New -> Blueprint) and it reads `render.yaml`.
+
+**Streamlit Community Cloud**: connect the repository, set the main file to
+`app.py`; `requirements.txt` is picked up automatically.
+
+**Locally over the network**:
+
+```bash
+streamlit run app.py --server.address 0.0.0.0 --server.port 8501
+```
+
+The free tiers of hosted platforms sleep when idle and run on a single small
+CPU, so the first request after a sleep is slow and large GA budgets take
+longer there than on a laptop.

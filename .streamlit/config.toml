@@ -10,3 +10,7 @@ font = "sans serif"
 
 [browser]
 gatherUsageStats = false
+
+[server]
+# Hosting: Render and similar platforms inject $PORT and run headless.
+headless = true
